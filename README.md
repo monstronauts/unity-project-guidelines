@@ -1,10 +1,11 @@
 # Monstronauts' Unity Project Guidelines #
 
-Follow these guidelines and preferred practices when working on Unity projects with the Monstronauts team
+Follow these guidelines and preferred practices when working on Unity projects with the Monstronauts team.
 
 ## Table of Contents
 - [Naming Guidelines](#naming-guidelines)
   + [General Rules](#general-rules)
+  + [Namespaces](#namespaces)
 
 ## Naming Guidelines
 
@@ -22,6 +23,7 @@ There are minor differences between Microsoft's standards, and Monstronauts' sta
 
 **✓ DO** follow the first character's capitalization for acronyms or abbreviations consisting of only 2 characters. Otherwise, use lowercase for the rest of the characters after the first character.
 
+Example:
 ```csharp
 HtmlHelper htmlHelper;
 FtpTransfer ftpTransfer;
@@ -40,6 +42,7 @@ UIControl uiControl;
 
 **X DO NOT** use **Hungarian** notation in identifiers.
 
+Example:
 ```csharp
 // Good
 int counter;
@@ -52,6 +55,7 @@ string strName;
 
 **X DO NOT** use abbreviations, contractions, or acryonyms **that aren't widely accepted or commonly used** as part of identifier names.
 
+Example:
 ```csharp
 // Good
 public void ShowWindow();
@@ -61,3 +65,29 @@ public void ShowWin();
 ```
 
 ***X AVOID*** using identifiers that conflict with keywords of widely used programming languages.
+
+### Namespaces
+
+**✓ DO** organize namespaces with a clearly defined structure.
+
+**✓ DO** use PascalCasing, and concatenate multiple words together without hyphens ( - ) or underscores ( \_ ), and separate namespace components with periods.
+
+**✓ CONSIDER** using plural namespace names where appropriate.
+
+The following template specifies the general rule for naming namespaces:
+```
+<Company>.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]
+```
+
+Example:
+```csharp
+Monstronauts.PotionPunch
+Monstronauts.Modulark.Analytics
+Monstronauts.Modulark.Utils
+Monstronauts.Twiddle.Core.BaseClasses
+```
+
+**X DO NOT** use the same name for a namespace and a type in that namespace.
+
+### Enums
+
