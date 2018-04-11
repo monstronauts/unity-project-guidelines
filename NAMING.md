@@ -6,6 +6,23 @@ There are minor differences between Microsoft's standards, and Monstronauts' sta
 
 ## Table of Contents
 - [General Rules](#general-rules)
+- [Namespaces](#namespaces)
+- [Classes & Structs](#classes--structs)
+- [Interfaces](#interfaces)
+- [Methods](#methods)
+- [Properties](#properties)
+- [Events](#events)
+- [Delegates](#delegates)
+- [Fields](#fields)
+- [Parameters](#parameters)
+- [Enums](#enums)
+- [Attributes](#attributes)
+- [Exceptions](#exceptions)
+- [String Keys](#string-keys)
+- [Prefabs](#prefabs)
+- [Scenes](#scenes)
+- [Scriptable Objects](#scriptable-objects)
+- [Assets & Resources](#assets--resources)
 
 ## General Rules
 
@@ -29,6 +46,8 @@ UIControl uiControl;
 **✓ DO** favor consistency over readability, and readability over brevity.
 
 **✓ DO** use common names, such as **value** or **item**, rather than repeating the type name, in the rare cases when an identifier has no semantic meaning and the type of the paramater is not important.
+
+**✓ DO** use US English spelling except for `MonoBehaviour` and its subclasses.
 
 **X DO NOT** capitalize each word in closed-form compound words (two or more words that are connected and written as one word such as Endpoint).
 
@@ -60,7 +79,7 @@ public void ShowWin();
 
 ***X AVOID*** using identifiers that conflict with keywords of widely used programming languages.
 
-### Namespaces
+## Namespaces
 
 **✓ DO** use PascalCasing, and concatenate multiple words together without hyphens ( - ) or underscores ( \_ ), and separate namespace components with periods.
 
@@ -83,11 +102,7 @@ using Monstronauts.Twiddle.Core.BaseClasses
 
 **X DO NOT** use the same name for a namespace and a type in that namespace.
 
-### Classes & Structs
-
-#### Which one to use?
-
-Any suggestions? :D
+## Classes & Structs
 
 **✓ DO** use PascalCasing.
 
@@ -102,7 +117,7 @@ public class RoundSquare : Square
 
 **X DO NOT** give class or struct names a prefix. Use namespaces to classify and group them instead.
 
-### Interfaces
+## Interfaces
 
 **✓ DO** name interfaces with adjective phrases, or ocassionally with nouns or noun phrases, prefixed with the letter "I".
 
@@ -120,13 +135,13 @@ Example:
 public class CellHandler : ICellDelegate
 ```
 
-### Methods
+## Methods
 
 **✓ DO** use PascalCasing.
 
 **✓ DO** name methods using verbs or verb phrases.
 
-### Properties
+## Properties
 
 **✓ DO** use PascalCasing.
 
@@ -136,20 +151,162 @@ public class CellHandler : ICellDelegate
 
 **✓ DO** name a property the same as its type when the type is not a primitive.
 
+## Events
 
+**✓ DO** use PascalCasing.
 
+**✓ DO** name events with a verb or a verb phrase, using the Past Tense.
 
+**X DO NOT** use "Before" or "After" prefixes or postfixes such as "Will", "On", "Is", "Did" to indicate pre- and post-events. Use present and past tenses as described.
 
+Example:
+```csharp
+// Good
+public event Action Closing;
+public event Action Closed;
 
+// Bad
+public event Action IsClosing;
+public event Action DidClose;
+```
 
+**✓ DO** name the event parameter "sender" of type "object" if it represents the object that raised the event.
 
+**✓ DO** name event argument classes with the EventArgs suffix.
 
+**✓ DO** name the event parameter "e" if it represents that event argument class.
 
+## Delegates
 
+**✓ DO** use PascalCasing.
 
+**✓ DO** add the suffix "EventHandler" to names of delegates that are used in events.
+
+Example:
+```csharp
+// Good
+public delegate void ClickEventHandler(){}
+
+// Bad
+public delegate void Click(){}
+```
+
+**✓ DO** add the suffix "Callback" to names of delegates other than those used as event handlers.
+
+```csharp
+// Good
+public delegate void RenderCallback(){}
+
+// Bad
+public delegate void Render(){}
+```  
+
+**X DO NOT** add the suffix "Delegate" to a delegate.
+
+## Fields
+
+**✓ DO** use camelCasing for all non-static field names.
+
+**✓ DO** prefix private fields with "_" to easily identify them in constructors, methods, and properties.
+
+Example:
+```csharp
+public class Hero
+{
+  public string alias;
+  protected string realName;
+  string _secretIdentity;
+}
+```
+
+**✓ DO** use PascalCasing for static field names.
+
+**✓ DO** name fields using a noun, noun phrase, or adjective.
+
+**✓ DO** use SCREAMING_CAPS for constants or readonly variables.
+
+Example:
+```csharp
+public static float DefaultTurnRate = 20.0f;
+public static const float DEFAULT_TURN_RATE = 20.0f;
+```
+
+## Parameters
+
+**✓ DO** use camelCasing.
+
+**✓ DO** favor descriptive parameter names over abbreviated or single character names except when (A) it is widely accepted, (B) it is scoped inside a loop, and (C) it is explicitly written in this guide.
+
+**✓ DO** use "left" and "right" for binary operator overload parameter names if there is no meaning to the parameters.
+
+**✓ DO** use "value" for unary operator overload parameter names if there is no meaning to the parameters.
+
+## Enums
+
+**✓ DO** use PascalCasing.
+
+**✓ DO** use singular names for regular enums, and plural names for bit field enums (flags enums).
+
+Example:
+```csharp
+public enum Color
+{
+  Red,
+  Green,
+  Blue,
+  Yellow,
+  White,
+  Black
+}
+
+[Flags]
+public enum Sides
+{
+  None = 0,
+  Top = 1,
+  Left = 2,
+  Right = 4,
+  Bottom = 8
+}
+```
+
+**X DO NOT** add the suffix "Enum", "Flag" or "Flags".
+
+## Attributes
+
+**✓ DO** use PascalCasing.
+
+**✓ DO** add the suffix "Attribute".
+
+## Exceptions
+
+**✓ DO** use PascalCasing.
+
+**✓ DO** add the suffix "Exception".
+
+## String Keys
+
+**✓ DO** use PascalCasing.
+
+## Prefabs
+
+**✓ DO** use PascalCasing.
+
+## Scenes
+
+**✓ DO** use PascalCasing.
+
+## Scriptable Objects
+
+**✓ DO** use PascalCasing.
+
+## Assets & Resources
+
+**✓ DO** use PascalCasing.
 
 ## Where To Next?
-- [Declaration Guidelines]
-- [Code Formatting Guidelines]
-- [Design Guidelines]
-- [Learning Resources]
+- [Show All Topics](#README.md)
+- [Naming Guidelines (You Are Here)](#naming-guidelines)
+- [Formatting Guidelines](#FORMATTING.md)
+- [Design Guidelines](#DESIGN.md)
+- [Learning Resources](#RESOURCES.md)
