@@ -305,8 +305,8 @@ public enum Sides
 **✓ DO** use PascalCasing.
 
 ## Where To Next?
-- [Show All Topics](../README.md)
-- [Naming Guidelines (You Are Here)](#naming-guidelines)
+- [Show All Topics](README.md)
+- [Naming Guidelines](#naming-guidelines) (You Are Here)
 - [Formatting Guidelines](FORMATTING.md)
 - [Design Guidelines](DESIGN.md)
 - [Learning Resources](RESOURCES.md)
