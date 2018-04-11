@@ -123,9 +123,9 @@ public class RoundSquare : Square
 
 Example:
 ```csharp
-IComponent //descriptive noun
-ICustomAttributeProvider //noun phrase
-IPersistable //adjective
+interface IComponent {} // Descriptive noun
+interface ICustomAttributeProvider {} // Noun phrase
+interface IPersistable {} // Adjective
 ```
 
 **✓ DO** ensure that the names differ only by the "I" prefix on the interface name when you are defining a class-interface pair where the class is a standard implementation of the interface.
@@ -305,7 +305,7 @@ public enum Sides
 **✓ DO** use PascalCasing.
 
 ## Where To Next?
-- [Show All Topics](#README.md)
+- [Show All Topics](../#README.md)
 - [Naming Guidelines (You Are Here)](#naming-guidelines)
 - [Formatting Guidelines](#FORMATTING.md)
 - [Design Guidelines](#DESIGN.md)
