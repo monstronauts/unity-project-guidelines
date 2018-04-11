@@ -6,6 +6,8 @@ Follow these guidelines and preferred practices when working on Unity projects w
 - [Naming Guidelines](#naming-guidelines)
   + [General Rules](#general-rules)
   + [Namespaces](#namespaces)
+  + [Classes & Structs](#classes--structs)
+  + [Interfaces](#interfaces)
 
 ## Naming Guidelines
 
@@ -68,11 +70,11 @@ public void ShowWin();
 
 ### Namespaces
 
-**✓ DO** organize namespaces with a clearly defined structure.
-
 **✓ DO** use PascalCasing, and concatenate multiple words together without hyphens ( - ) or underscores ( \_ ), and separate namespace components with periods.
 
 **✓ CONSIDER** using plural namespace names where appropriate.
+
+**✓ DO** organize namespaces with a clearly defined structure.
 
 The following template specifies the general rule for naming namespaces:
 ```
@@ -80,7 +82,7 @@ The following template specifies the general rule for naming namespaces:
 ```
 
 Example:
-```csharp
+```
 Monstronauts.PotionPunch
 Monstronauts.Modulark.Analytics
 Monstronauts.Modulark.Utils
@@ -89,5 +91,41 @@ Monstronauts.Twiddle.Core.BaseClasses
 
 **X DO NOT** use the same name for a namespace and a type in that namespace.
 
-### Enums
+### Classes & Structs
 
+#### Which one to use?
+
+Any suggestions? :D
+
+**✓ DO** use PascalCasing.
+
+**✓ DO** name classes and structs with nouns or noun phrases.
+
+**✓ CONSIDER** ending the name of derived classes with the name of the base class.
+
+Example:
+```csharp
+public class RoundSquare : Square
+```
+
+**X DO NOT** give class or struct names a prefix. Use namespaces to classify and group them instead.
+
+Written in **PascalCase**. For example `RadialSlider`. 
+
+### Interfaces
+
+**✓ DO** name interfaces with adjective phrases, or ocassionally with nouns or noun phrases, prefixed with the letter 'I'.
+
+Example:
+```
+IComponent //descriptive noun
+ICustomAttributeProvider //noun phrase
+IPersistable //adjective
+```
+
+**✓ DO** ensure that the names differ only by the 'I' prefix on the interface name when you are defining a class-interface pair where the class is a standard implementation of the interface.
+
+Example:
+```csharp
+public class CellHandler : ICellDelegate
+```
