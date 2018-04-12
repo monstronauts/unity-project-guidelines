@@ -1,6 +1,6 @@
 # Naming Guidelines #
 
-The overarching goals of these guidelines are to balance the source code's **consistency**, **readability/clarity**, and **simplicity/brevity**. The reader must understand the purpose and type of each identifier in the source code without having to refer to, or rely on its complete declaration.
+The overarching goal of these guidelines is to balance the source code's **consistency**, **readability/clarity**, and **simplicity/brevity**. The reader must understand the purpose and type of each identifier in the source code without having to refer to, or rely on its complete declaration.
 
 There are minor differences between Microsoft's standards, and Monstronauts' standards, so unless otherwise noted below, naming should follow the [Microsoft .NET Naming Standards for C#](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines).
 
@@ -23,6 +23,10 @@ There are minor differences between Microsoft's standards, and Monstronauts' sta
 - [Scenes](#scenes)
 - [Scriptable Objects](#scriptable-objects)
 - [Assets & Resources](#assets--resources)
+- [Identifiers](#identifiers)
+  + [Bundle Identifier](#bundle-identifier)
+  + [SKU](#sku)
+- [Display Names](#display-names)
 
 ## General Rules
 
@@ -185,20 +189,20 @@ public event Action DidClose;
 Example:
 ```csharp
 // Good
-public delegate void ClickEventHandler(){}
+public delegate void ClickEventHandler();
 
 // Bad
-public delegate void Click(){}
+public delegate void Click();
 ```
 
 **✓ DO** add the suffix "Callback" to names of delegates other than those used as event handlers.
 
 ```csharp
 // Good
-public delegate void RenderCallback(){}
+public delegate void RenderCallback();
 
 // Bad
-public delegate void Render(){}
+public delegate void Render();
 ```  
 
 **X DO NOT** add the suffix "Delegate" to a delegate.
@@ -303,6 +307,52 @@ public enum Sides
 ## Assets & Resources
 
 **✓ DO** use PascalCasing.
+
+## Identifiers
+
+### Bundle Identifier
+
+**✓ DO** use lowercasing.
+
+**✓ DO** use a reverse-domain name style string and follow this structure for bundle identifiers:
+
+```
+<tld>.<companyname>.<applicationname>
+```
+
+Example:
+```
+com.monstronauts.potionpunch
+com.monstronauts.rowanmcpaddles
+com.monstronauts.orebits
+```
+
+### SKU
+
+**✓ DO** use lowercasing.
+
+**✓ DO** use the application name without anything else.
+
+**Good:**
+```
+potionpunch
+rowanmcpaddles
+```
+
+**Bad:**
+```
+PP
+PP01
+com.monstronauts.potionpunch
+```
+
+## Display Names
+
+**✓ DO** set the company or organization name to "Monstronauts Inc." where applicable.
+
+**✓ DO** use the company name as the Copyright holder where applicable. An example would be "Copyright 2018 Monstronauts Inc.".
+
+**✓ DO** use Title Casing unless the title is creatively written using a defined casing rule.
 
 ## Where To Next?
 - [Show All Topics](README.md)
