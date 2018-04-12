@@ -22,24 +22,25 @@ Follow these guidelines and preferred practices when working on Unity projects w
   + [Scenes](NAMING.md#scenes)
   + [Scriptable Objects](NAMING.md#scriptable-objects)
   + [Assets & Resources](NAMING.md#assets--resources)
-  + [Identifiers](#identifiers)
-    * [Bundle Identifier](#bundle-identifier)
-    * [SKU](#sku)
-  + [Display Names](#display-names)
+  + [Identifiers](NAMING.md#identifiers)
+    * [Bundle Identifier](NAMING.md#bundle-identifier)
+    * [SKU](NAMING.md#sku)
+  + [Display Names](NAMING.md#display-names)
 - [Formatting Guidelines](FORMATTING.md)
-  + [Static Members](#static-members)
-  + [Parentheses](#parentheses)
-  + [Spacing](#spacing)
-    * [Indentation](#indentation)
-    * [Vertical Spacing](#vertical-spacing)
-  + [Braces (Curly Brackets)](#braces--curly-brackets)
-  + [Declarations](#declarations)
-    * [Access Level Modifiers](#access-level-modifiers)
-    * [Implicitly Typed Local Variables](#implicitly-typed-local-variables)
-  + [Use of This](#use-of-this)
-  + [Comments](#comments)
-  + [Regions](#regions)
-  + [Unused Code](#unused-code)
+  + [Static Members](FORMATTING.md#static-members)
+  + [Parentheses](FORMATTING.md#parentheses)
+  + [Spacing](FORMATTING.md#spacing)
+    * [Indentation](FORMATTING.md#indentation)
+    * [Vertical Spacing](FORMATTING.md#vertical-spacing)
+  + [Braces (Curly Brackets)](FORMATTING.md#braces-curly-brackets)
+  + [Declarations](FORMATTING.md#declarations)
+    * [Access Level Modifiers](FORMATTING.md#access-level-modifiers)
+    * [Implicitly Typed Local Variables](FORMATTING.md#implicitly-typed-local-variables)
+  + [Use of This](FORMATTING.md#use-of-this)
+  + [Comments](FORMATTING.md#comments)
+  + [Regions](FORMATTING.md#regions)
+  + [Unused Code](FORMATTING.md#unused-code)
+  + [Folder Structure](FORMATTING.md#folder-structure)
 - [Learning Resources](RESOURCES.md)
   + [Basic Pipeline Topics](RESOURCES.md#basic-pipeline-topics)
   + [Advanced Programming Topics](RESOURCES.md#advanced-programming-topics)
@@ -72,9 +73,33 @@ de-couple
 reusable
 -->
 
+## Naming Guidelines
+
+This section provides a set of naming conventions for identifiers in your source code, your Unity project, and your application.
+
+Start with the [Naming Guidelines](NAMING.md)
+
+## Formatting Guidlines
+
+This section defines a standard layout and format for both your source code, and your Unity project.
+
+Skip to the [Formatting Guidelines](FORMATTING.md)
+
+## Design Guidelines
+
+This section provides guidelines for designing and architecting code for applications and libraries.
+
+Skip to the [Design Guidelines](DESIGN.md)
+
+## Learning Resources
+
+This sections contains links to tutorials, videos, and other learning materials to help familiarize yourself with C# and Unity concepts.
+
+Skip to the [Learning Resources](RESOURCES.md)
+
 ## Contributors
 
-This guide is maintained by [Monstronauts](https://monstronauts.com)
+This guide is maintained by [Monstronauts](https://monstronauts.com).
 
 - [Allen Tan](https://github.com/abgtan)
 - [Bear Sarile](https://github.com/bearsarile)

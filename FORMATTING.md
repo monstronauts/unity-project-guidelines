@@ -10,7 +10,7 @@ There are minor differences between Microsoft's standards, and Monstronauts' sta
 - [Spacing](#spacing)
   + [Indentation](#indentation)
   + [Vertical Spacing](#vertical-spacing)
-- [Braces (Curly Brackets)](#braces--curly-brackets)
+- [Braces (Curly Brackets)](#braces-curly-brackets)
 - [Declarations](#declarations)
   + [Access Level Modifiers](#access-level-modifiers)
   + [Implicitly Typed Local Variables](#implicitly-typed-local-variables)
@@ -18,6 +18,7 @@ There are minor differences between Microsoft's standards, and Monstronauts' sta
 - [Comments](#comments)
 - [Regions](#regions)
 - [Unused Code](#unused-code)
+- [Folder Structure](#folder-structure)
 
 ## Static Members
 
@@ -182,6 +183,10 @@ var cell = cells[cellKey];
 **✓ DO** remove or comment out all unused code and imports.
 
 **✓ CONSIDER** a deprecation process before removing code used by other team members. 
+
+## Folder Structure
+
+TODO: INSERT DEFAULT FOLDER STRUCTURE HERE.
 
 ## Where To Next?
 - [Show All Topics](README.md)
