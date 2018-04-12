@@ -19,6 +19,7 @@ There are minor differences between Microsoft's standards, and Monstronauts' sta
 - [Regions](#regions)
 - [Unused Code](#unused-code)
 - [Folder Structure](#folder-structure)
+- [Project Template](#project-template)
 
 ## Static Members
 
@@ -187,6 +188,10 @@ var cell = cells[cellKey];
 ## Folder Structure
 
 TODO: INSERT DEFAULT FOLDER STRUCTURE HERE.
+
+## Project Template
+
+TODO: SHOW OR LINK TO PROJECT TEMPLATE HERE.
 
 ## Where To Next?
 - [Show All Topics](README.md)

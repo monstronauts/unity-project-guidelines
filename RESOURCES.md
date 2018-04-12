@@ -59,4 +59,8 @@
 * [Designing a Jiggle System for Animation in Maya](https://www.pluralsight.com/courses/designing-jiggle-system-animation-maya-1921)
 
 ## Where To Next?
-- [Naming Guidelines](Naming.md)
+- [Show All Topics](README.md)
+- [Naming Guidelines](NAMING.md) 
+- [Formatting Guidelines](FORMATTING.md)
+- [Design Guidelines](DESIGN.md)
+- [Learning Resources](#learning-resources)  (You Are Here)

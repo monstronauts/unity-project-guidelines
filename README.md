@@ -41,6 +41,7 @@ Follow these guidelines and preferred practices when working on Unity projects w
   + [Regions](FORMATTING.md#regions)
   + [Unused Code](FORMATTING.md#unused-code)
   + [Folder Structure](FORMATTING.md#folder-structure)
+  + [Project Template](FORMATTING.md#project-template)
 - [Learning Resources](RESOURCES.md)
   + [Basic Pipeline Topics](RESOURCES.md#basic-pipeline-topics)
   + [Advanced Programming Topics](RESOURCES.md#advanced-programming-topics)
@@ -67,6 +68,8 @@ Follow these guidelines and preferred practices when working on Unity projects w
   + [Error Handling]
   + [Warnings & #Errors]
   + [Deprecation]
+
+  hack and prototype-quality code
   
   Prioritize over your own solution
 de-couple
