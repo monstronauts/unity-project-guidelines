@@ -44,7 +44,7 @@ int health = DefaultHealth;
 
 **✓ DO** use spaces, and not tabs for indentation.
 
-**✓ DO** use 2 character spaces, instead of the default 4.
+**✓ DO** use **2** character spaces, instead of the default 4.
 
 **✓ DO** add exactly one blank line between method definitions and property definitions.
 

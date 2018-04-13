@@ -174,7 +174,7 @@ public event Action IsClosing;
 public event Action DidClose;
 ```
 
-**✓ DO** name the event parameter "sender" of type "object" if it represents the object that raised the event.
+**✓ DO** name the event parameter "sender" of type `object` if it represents the object that raised the event.
 
 **✓ DO** name event argument classes with the EventArgs suffix.
 

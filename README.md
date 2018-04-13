@@ -42,6 +42,16 @@ Follow these guidelines and preferred practices when working on Unity projects w
   + [Unused Code](FORMATTING.md#unused-code)
   + [Folder Structure](FORMATTING.md#folder-structure)
   + [Project Template](FORMATTING.md#project-template)
+- [Design Guidelines](DESIGN.md)
+  + [Class or Struct](#class-or-struct)
+  + [Preprocessor Directives](#preprocessor-directives)
+  + [Extensibility](#extensibility)
+  + [Delegation](#delegation)
+  + [Deprecation](#deprecation)
+  + [Logging](#logging)
+  + [Error Handling](#error-handling)
+  + [Library Usage](#library-usage)
+  + [Code Review](#code-review)
 - [Learning Resources](RESOURCES.md)
   + [Basic Pipeline Topics](RESOURCES.md#basic-pipeline-topics)
   + [Advanced Programming Topics](RESOURCES.md#advanced-programming-topics)
@@ -54,27 +64,6 @@ Follow these guidelines and preferred practices when working on Unity projects w
   + [Art Topics](RESOURCES.md#art-topics)
     * [Concept Art](RESOURCES.md#concept-art)
     * [Maya](RESOURCES.md#maya)
-<!--
-- [Design Guidelines]
-  + [Class or Struct]
-  + [Abstract Classes]
-  + [Static Classes]
-  + [Interfaces]
-  + [Structs]
-  + [Enums]
-  + [Nested Types]
-  + [Libraries] // must be modular
-  + [Logging]
-  + [Error Handling]
-  + [Warnings & #Errors]
-  + [Deprecation]
-
-  hack and prototype-quality code
-  
-  Prioritize over your own solution
-de-couple
-reusable
--->
 
 ## Naming Guidelines
 
@@ -96,7 +85,7 @@ Skip to the [Design Guidelines](DESIGN.md)
 
 ## Learning Resources
 
-This sections contains links to tutorials, videos, and other learning materials to help familiarize yourself with C# and Unity concepts.
+This section contains links to tutorials, videos, and other learning materials to help familiarize yourself with C# and Unity concepts.
 
 Skip to the [Learning Resources](RESOURCES.md)
 
