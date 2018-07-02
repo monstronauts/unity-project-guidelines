@@ -232,7 +232,7 @@ public class Hero
 Example:
 ```csharp
 public static float DefaultTurnRate = 20.0f;
-public static const float DEFAULT_TURN_RATE = 20.0f;
+public const float DEFAULT_TURN_RATE = 20.0f;
 ```
 
 ## Parameters
